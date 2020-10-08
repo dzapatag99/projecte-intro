@@ -1,0 +1,15 @@
+body{
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: end;
+}
+
+.flex-container div img{
+    display: flex;
+    margin: 0 auto;
+    justify-content: end;
+}
