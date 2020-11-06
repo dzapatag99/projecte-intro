@@ -24,6 +24,7 @@ body{
 
 header{
     grid-area: a-header;
+    padding-top: 50px;
 }
 
 section{
