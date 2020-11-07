@@ -1,0 +1,139 @@
+body{
+	text-align:center;
+	background:url("../img/inicio_1.png") top center;
+}
+
+/* Contenedor principal*/
+#page{
+	text-align:left;
+	margin-left:5%;
+	margin-right:5%;
+	background:#000000;
+}
+
+/* Estilos del encabezado de la página */
+header{
+	background:url('../img/bg_top.png') top left;
+	height:70px;
+	clear:both;
+}
+header #logo{
+	font:bold 20px arial;
+	background:url('../img/3djuegos.png') no-repeat;
+	float:left;
+	padding-left:270px;
+	padding-top:70px;
+}
+header #form-search{
+	font:bold 20px arial;
+	padding:0px 20px 0 0;
+	line-height:70px;
+	text-align:right;
+	float:right;
+}
+
+/* Estilos de navegación */
+nav{
+	background-image:url('../img/bg_menu.png');
+	clear:both;
+	color:#99CCCC;
+	line-height:30px;
+	text-align:center;
+}
+nav a{
+	text-decoration:none;
+	color:#99CCCC;
+	font:normal 0.8em arial;
+}
+nav a:hover{
+	color:#ffffff;
+}
+
+/* Estilos del contenido central */
+main{
+	float:left;
+	width:60%;
+	background:#000000 url('../img/final.jpg') no-repeat top left;
+	min-height:300px;
+	padding-left:15px;
+	padding-top:60px;
+}
+main article{
+	width:250px;
+}
+main article p{
+	color:#ffffff;
+	font:normal 12px arial;
+	text-align:justify;
+}
+main article h2{
+	font:bold 30px arial;
+	color:#F0302F;
+	padding-left:20px;
+
+}
+main h4{
+	font:bold 15px arial;
+	color:#ffffff;
+	padding-left:20px;
+	margin-bottom:40px;
+}
+
+/* Estilos de la columna lateral */
+aside{
+	float:left;
+	width:35%;
+}
+aside h3{
+	font:bold 18px arial;
+	color:#ffffff;
+}
+aside ul{
+	list-style-type:none
+}
+aside li{
+	font:normal 12px arial;
+	color:#ffffff;
+	padding-left:70px;
+	padding-bottom:25px;
+	height:38px;
+	text-align:justify;
+}
+aside #news-1{
+	background:#000000 url('../img/foto_1.jpg') no-repeat top left;
+}
+aside #news-2{
+	background:#000000 url('../img/foto_2.jpg') no-repeat top left;
+}
+aside #news-3{
+	background:#000000 url('../img/foto_3.jpg') no-repeat top left;
+}
+aside #news-4{
+	background:#000000 url('../img/foto_4.jpg') no-repeat top left;
+}
+aside #news-5{
+	background:#000000 url('../img/foto_5.jpg') no-repeat top left;
+}
+
+/* Estilos de pie de página */
+footer{
+	font:bold 10px arial;
+	color:#666666;
+	text-align:center;
+	background:#000000 url('../img/bg_peu.png') no-repeat;
+	height:100px;
+	padding-top:50px;
+	clear:both;
+}
+footer .social-networks{
+	padding-top:20px;
+	text-align:center;
+
+}
+footer .social-networks a{
+	text-decoration:none;
+}
+
+@media {
+	
+}
