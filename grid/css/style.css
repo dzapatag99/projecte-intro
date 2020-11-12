@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAE0DA;
+    color: #3E312E;
+    font-family: 'Goldman', cursive;
+}
+
+.container {
+    display: grid;
+    width: 90%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "header    header      header"
+                         "content   content     sidebar"
+                         "widget1   widget2     sidebar"
+                         "footer    footer      footer";
+
+
+}
+
+.container > div,
+.container .header,
+.container .content,
+.container .sidebar,
+.container .footer{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.container .header {
+    grid-area: header;
+    background: #333333;
+    color: blanchedalmond;
+    font-size: 40px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .navegation .menu ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+
+} 
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color:#C3CAE3;
+    text-decoration: none;
+} 
+
+.menu > li > a:hover{
+    color: coral;
+    transition: all .3s;
+} 
+
+.container .header .navegation .menu .submenu{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.container .header .navegation .menu .submenu li a{
+    display: block;
+    padding: 15px;
+    color:#C3CAE3;
+    text-decoration: none;
+}
+
+.container .header .navegation .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    color: coral;
+    transition: all .3s;
+}
+
+.container .content {
+    grid-area: content;
+}
+
+.container .sidebar{
+    grid-area: sidebar;
+    background: #faa43d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container .widget1{
+    grid-area: widget1;
+    background: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .widget2 {
+    grid-area: widget2;
+    background: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .footer {
+    grid-area: footer;
+    background-color: crimson;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        font-size: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "header    header      header"
+                             "content   content     content"
+                             "sidebar   sidebar     sidebar"
+                             "widget1   widget2     widget2"
+                             "footer    footer      footer";
+    }
+
+}
